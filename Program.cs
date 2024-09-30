@@ -27,4 +27,17 @@
             return length*length;
         }
     }
+
+    public class Rectangle : Shapes
+    {
+        public Rectangle(double length , double whidth)
+        {
+            this.length = length;
+            this.whidth = whidth;
+        }
+        public override double area()
+        {
+            return length * whidth;
+        }
+    }
 }
