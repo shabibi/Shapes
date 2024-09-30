@@ -53,4 +53,18 @@
             return Math.PI * length * length;
         }
     }
+
+    public class Triangle : Shapes
+    {
+        public Triangle(double baselength, double height)
+        {
+            length = baselength;
+            whidth = height;
+
+        }
+        public override double area()
+        {
+            return 0.5 * length * whidth;
+        }
+    }
 }
