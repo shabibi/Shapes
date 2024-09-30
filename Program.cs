@@ -4,7 +4,17 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Shapes C = new Circle(4);
+            Shapes R = new Rectangle(4,5);
+            Shapes T = new Triangle(4,5);
+            Shapes S = new square(4);
+
+            Console.WriteLine($"The area of the Circle is   : {C.area()}\n");
+            Console.WriteLine($"The area of the Rectangle is: {R.area()}\n");
+            Console.WriteLine($"The area of the Triangle is : {T.area()}\n");
+            Console.WriteLine($"The area of the Square is   : {S.area()}\n");
+
+
         }
     }
 
@@ -24,7 +34,7 @@
         }
         public override double area()
         {
-            return length*length;
+            return (length*length);
         }
     }
 
