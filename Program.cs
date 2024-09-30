@@ -40,4 +40,17 @@
             return length * whidth;
         }
     }
+
+    public class Circle : Shapes
+    {
+        public Circle(double radius)
+        {
+            length = radius;
+            
+        }
+        public override double area()
+        {
+            return Math.PI * length * length;
+        }
+    }
 }
